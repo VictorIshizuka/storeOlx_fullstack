@@ -33,7 +33,7 @@ header {
     color: #5c7bfa;
 }
 .header-area-right {
-    width: 316px;
+    width: 380px;
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -1,11 +1,23 @@
+@php
+    $nameLogged = Auth::user()->name;
+    $nameFormatted = explode(' ', $nameLogged)[0];
+@endphp
+
 <header>
     <div class="header-area">
-        <a href="" class="header-area-left">B7Store</a>
+        <a href="" class="header-area-left">StoreOlx</a>
         <div class="header-area-right">
-            <a href="login.html" class="my-account">
-                <img src="assets/icons/userIcon.png" />
-                Minha Conta
-            </a>
+            @if (Auth::check())
+                <a href="#" class="my-account">
+                    <img src="assets/icons/userIcon.png" />
+                    Minha Conta - {{ $nameFormatted }}
+                </a>
+            @else
+                <a href="{{ route('login') }}" class="my-account">
+                    <img src="assets/icons/userIcon.png" />
+                    Login
+                </a>
+            @endif
             <a href="" class="announce-now">Anunciar agora →</a>
             <img class="menu-icon" src="assets/icons/menuIcon.png" alt="Menu" />
             <div class="menu-mobile">
