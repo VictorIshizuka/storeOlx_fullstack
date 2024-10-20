@@ -5,6 +5,7 @@
 /public/storage
 /storage/*.key
 /storage/pail
+/public/tamplate-assets/*
 /vendor
 .env
 .env.backup
