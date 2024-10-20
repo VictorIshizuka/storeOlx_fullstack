@@ -57,4 +57,11 @@ class AuthController extends Controller
             return view('auth.login', $data);
         }
     }
+
+    public function logout()
+    {
+        Auth::logout();
+        $data['message'] = 'Sessão finalizada!';
+        return view('login', $data);
+    }
 }

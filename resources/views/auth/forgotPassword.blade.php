@@ -14,7 +14,7 @@
     <a href="{{ route('login') }}" class="back-button">← Voltar</a>
     <div class="login-page">
         <div class="login-area">
-            <h3 class="login-title">StoreOlx</h3>
+            <h3 class="login-title">StoreOlx | Esqueceu a senha</h3>
             <div class="text-login">
                 Digite um email para recuperação da senha.
             </div>

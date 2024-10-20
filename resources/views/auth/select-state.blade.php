@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="stylesheet" href="assets/loginSignUpStyle.css" />
 
-    <title>StoreOlx - Selecionar Estado</title>
+    <title>StoreOlx | Selecionar Estado</title>
 </head>
 
 <body>

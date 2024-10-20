@@ -5,11 +5,11 @@
 
 <header>
     <div class="header-area">
-        <a href="" class="header-area-left">StoreOlx</a>
+        <a href="{{ route('my_account') }}" class="header-area-left">StoreOlx</a>
         <div class="header-area-right">
             @if (Auth::check())
-                <a href="#" class="my-account">
-                    <img src="assets/icons/userIcon.png" />
+                <a href="{{ route('my_account') }}" class="my-account">
+                    <img src="../assets/icons/userIcon.png" />
                     Minha Conta - {{ $nameFormatted }}
                 </a>
             @else

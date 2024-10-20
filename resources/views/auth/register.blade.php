@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="stylesheet" href="assets/loginSignUpStyle.css" />
 
-    <title>StoreOlx - Cadastre-se</title>
+    <title>StoreOlx | Cadastre-se</title>
 </head>
 
 <body>
     <a href="{{ route('login') }}" class="back-button">← Voltar</a>
     <div class="login-page">
         <div class="login-area">
-            <h3 class="login-title">StoreOlx</h3>
+            <h3 class="login-title">StoreOlx | Registre-se</h3>
             <div class="text-login">
                 Preencha os campos abaixo e realize seu cadastro.
             </div>

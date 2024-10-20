@@ -14,15 +14,15 @@
     {{-- <a href="index.html" class="back-button">← Voltar</a> --}}
     <div class="login-page">
         <div class="login-area">
-            <h3 class="login-title">StoreOlx</h3>
+            <h3 class="login-title">StoreOlx | Login</h3>
             <div class="text-login">
                 Use as suas credenciais para realizar o Login.
             </div>
+            @if ($message)
+                <p class="error">{{ $message }}</p>
+            @endif
             <form method="POST" action="{{ route('login_action') }}">
                 @csrf
-                @if ($message)
-                    <p class="error">{{ $message }}</p>
-                @endif
                 <div class="email-area">
                     <div class="email-label">E-mail</div>
                     <input type="email" name="email" class="@error('email') is-invalid @enderror"
